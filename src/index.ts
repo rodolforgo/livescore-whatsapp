@@ -1,0 +1,1 @@
+console.log("Estruturação inicial realizada com sucesso!");
