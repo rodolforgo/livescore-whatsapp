@@ -1,11 +1,13 @@
 import { Client, LocalAuth } from "whatsapp-web.js";
 const qrcode = require('qrcode-terminal');
 
+const waConfig = { puppeteer: { headless: false }, authStrategy: new LocalAuth() };
+
 export class WAConection {
     private client: Client;
     
     constructor() {
-        this.client = new Client({ puppeteer: { headless: false }, authStrategy: new LocalAuth() });
+        this.client = new Client(waConfig);
     }
 
     execute() {
