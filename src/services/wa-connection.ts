@@ -12,18 +12,18 @@ export class WAConection {
 
     execute() {
         this.client.on('qr', (qr) => {
-            console.log('QR RECEIVED', qr);
+            console.log('QR Code:', qr);
             qrcode.generate(qr, { small: true });
         });
 
         this.client.initialize();
 
         this.client.on('authenticated', () => {
-            console.log('Autenticado');
+            console.log('Autenticado!');
         });
 
         this.client.on('auth_failure', msg => {
-            console.error('Falha na autenticação', msg);
+            console.error('Falha na autenticação.', msg);
         });
 
         this.client.on('ready', () => {
@@ -34,7 +34,7 @@ export class WAConection {
             if (msg.body === '!ping') {
                 let chat = await msg.getChat();
                 console.log(chat)
-                msg.reply('pong');
+                msg.reply('pong!');
             }
         });
     }
