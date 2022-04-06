@@ -1,4 +1,4 @@
-import { Client, LocalAuth } from "whatsapp-web.js";
+import { Client, LocalAuth, MessageContent } from "whatsapp-web.js";
 const qrcode = require('qrcode-terminal');
 
 const waConfig = { puppeteer: { headless: false }, authStrategy: new LocalAuth() };
@@ -39,8 +39,8 @@ export class WAConection {
         });
     }
 
-    sendMsg() {
-        this.client.sendMessage("558396324407-1411859188@g.us", 'msg')
+    sendMsg(msg: MessageContent) {
+        this.client.sendMessage("558396324407-1411859188@g.us", msg)
     }
 }
 
