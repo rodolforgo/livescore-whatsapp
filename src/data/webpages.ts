@@ -1,9 +1,8 @@
-export class Webpages {
-    static pageScores: string;
-    static pageGameCloses: string;
+import dotenv from "dotenv";
 
-    constructor() {
-        Webpages.pageScores = `${process.env.URL}/rugby/?s=2`;
-        Webpages.pageGameCloses = `${process.env.URL}/rugby/?d=0&s=3`;
-    }
+dotenv.config();
+
+export class Webpages {
+    static pageScores: string = `${process.env.URL}/handebol/`
+    static pageGameCloses: string = `${process.env.URL}/rugby/?d=0&s=3`;
 }
