@@ -1,5 +1,5 @@
 node_modules
 package-lock.json
 build
-.wwebjs_auth
 .env
+.wwebjs_auth
