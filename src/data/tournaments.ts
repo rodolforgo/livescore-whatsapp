@@ -6,7 +6,9 @@ export class Tournaments {
         "Top 14",
         "Premiership Rugby",
         "Copa Currie",
-        "ALEMANHA: Bundesliga"
+        "Copa dos Campeões Europeus - Playoffs",
+        "Super Liga Americana",
+        "Copa Challenge",
     ];
 
     static search(tournament: string): boolean {
