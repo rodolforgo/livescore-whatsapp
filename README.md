@@ -8,14 +8,14 @@
 
 ### Uso
 
-- Instalação: ```npm install```
-- Configuração das varáveis de ambiente no .env:
+· Instalação: ```npm install```
+· Configuração das varáveis de ambiente no .env:
 ```
 URL = ""
 CGRC = ""
 TIMER = 18
 ```
-- Iniciar a aplicação: ```npm run start```
+· Iniciar a aplicação: ```npm run start```
 
 ### Imagem
 
