@@ -9,6 +9,7 @@
 ### Uso
 
 · Instalação: ```npm install```
+
 · Configuração das varáveis de ambiente no .env:
 ```
 URL = ""
