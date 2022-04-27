@@ -18,7 +18,7 @@ TIMER = 18
 ```
 · Iniciar a aplicação: ```npm run start```
 ___
-### Imagem
+### Demonstração
 
 ![image](https://user-images.githubusercontent.com/80327029/163283101-7a6df134-45ab-4558-acf5-e297cb27876b.png)
 ___
