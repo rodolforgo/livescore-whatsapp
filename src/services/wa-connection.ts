@@ -42,9 +42,9 @@ export class WAConection {
     sendMsg(address: string, msg: MessageContent) {
         const time = new Date().toLocaleTimeString();
         this.client.sendMessage(address, msg)
-        console.log(`Nova mensagem enviada [${time}]: ${msg}`);
+        console.log(`Nova mensagem enviada! ${time}`);
     }
-
+    
     sendPong() {
         this.client.on("message", async msg => {
             if (msg.body === "!ping") {
@@ -56,4 +56,3 @@ export class WAConection {
         });
     }
 }
-

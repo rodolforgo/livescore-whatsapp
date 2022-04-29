@@ -9,6 +9,7 @@ export class Tournaments {
         "Copa dos Campeões Europeus - Playoffs",
         "Super Liga Americana",
         "Copa Challenge",
+        "Seven's World Series"
     ];
 
     static search(tournament: string): boolean {
