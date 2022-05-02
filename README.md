@@ -1,10 +1,10 @@
 ### LiveScore WhatsApp
 
-- Chatbot de envio de placares em tempo real desenvolvido em Node.js e TypeScript.
-- Projeto pessoal criado com fins estudandis.
-- Principais funcionalidades: Busca e extrações de informações através de web scraping; acesso ao WhatsApp Web e envio de mensagens automáticas em tempo real.
+· Chatbot de envio de placares em tempo real desenvolvido em Node.js e TypeScript.
+· Projeto pessoal criado com fins estudandis.
+· Principais funcionalidades: Busca e extrações de informações através de web scraping; acesso ao WhatsApp Web e envio de mensagens automáticas em tempo real.
 
-- Bibliotecas utilizadas: Puppeteer e whataspp-web.js
+· Bibliotecas utilizadas: Puppeteer e whataspp-web.js
 ___
 ### Uso
 
