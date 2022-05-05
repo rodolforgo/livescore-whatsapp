@@ -19,15 +19,15 @@ export class Controller {
         await this.score.execute(Webpages.pageGameCloses, "closed");
         console.log("Primeira verificação realizada com sucesso.");
 
-        const getData = setInterval(async () => {
+        setInterval(async () => {
             const time = new Date().toLocaleTimeString();
             console.log(`Buscando novas informações... ${time}`);
             this.inProgress = await this.score.execute(Webpages.pageScores, "current");
             this.closed = await this.score.execute(Webpages.pageGameCloses, "closed");
 
             if (this.inProgress.length || this.closed.length) {
-                this.waConnection.sendMsg(process.env.CGRC as string, this.inProgress.join("\n"));
-                this.waConnection.sendMsg(process.env.CGRC as string, this.closed.join("\n"));
+                this.inProgress.length && this.waConnection.sendMsg(process.env.CGRC as string, this.inProgress.join("\n"));
+                this.closed.length && this.waConnection.sendMsg(process.env.CGRC as string, this.closed.join("\n"));
                 this.inProgress = [];
                 this.closed = [];
             } else {
