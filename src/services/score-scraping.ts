@@ -32,9 +32,10 @@ export class Scores {
         const elementHandle = await page.$("#main") as ElementHandle;
         const result = await elementHandle.$$eval("#score-data", (element: any) => element.map((n: HTMLElement) => n.outerText.split("\n")))
         await elementHandle.dispose();
-
+        await browser.close();
+        
         const formatedList = this.createList(result[0]);
-        return formatedList;
+        return formatedList
     }
 
     createList(gamesScraping: string[]): string[] {

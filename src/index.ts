@@ -6,6 +6,8 @@ const scores = new Scores();
 const client = new WAConection();
 const controller = new Controller(client, scores)
 
+process.on('warning', e => console.warn(e.stack));
+
 const app = async () => {
     controller.execute();    
 }
