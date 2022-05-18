@@ -9,7 +9,9 @@ export class Tournaments {
         "Copa dos Campeões Europeus - Playoffs",
         "Super Liga Americana",
         "Copa Challenge",
-        "Seven's World Series"
+        "Seven's World Series",
+        "Copa de Rugby da Premiership",
+        "Copa de Rugby da Premiership - Playoffs"
     ];
 
     static search(tournament: string): boolean {

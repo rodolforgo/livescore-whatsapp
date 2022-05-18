@@ -26,6 +26,10 @@ export class WAConection {
         client.on("ready", () => {
             console.log("Cliente logado com sucesso!");
         });
+
+        client.on('disconnected', (reason) => {
+            console.log('Client was logged out', reason);
+        });
     }
 
     sendMsg(address: string, msg: MessageContent) {
